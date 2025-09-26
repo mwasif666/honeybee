@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>3D Realistic Bee | @coding.stella</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- Remix Icon CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Feather Icon CDN -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <!-- Bootstrap CSS (for basic styling) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css"> -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./customstyling.css">
+
+
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <!-- ✅ Desktop Header -->
+  <section class="header-kaj">
+    <div class="header-area">
+      <div class="header-main-area">
+        <div class="container">
+          <div class="header-main">
+            <div class="header-element megamenu-block">
+              <nav class="main-navigation">
+                <div class="megamenu-content d-flex justify-content-between align-items-center">
+
+                  <!-- Logo -->
+                  <div class="header-element logo-wrap">
+                    <a href="https://qx-honee.myshopify.com" class="theme-header-logo">
+                      <img src="//qx-honee.myshopify.com/cdn/shop/files/logo.png?v=1726050767&width=500" width="250"
+                        height="54" loading="lazy" class="img-fluid">
+                    </a>
+                  </div>
+
+                  <!-- ✅ Desktop Menu -->
+                  <ul class="main-menu desktop-menu">
+                    <li class="menu-link">
+                      <a href="/" class="link-title active" aria-current="page">
+                        <span class="sp-link-title">Home</span>
+                      </a>
+                    </li>
+
+                    <li class="menu-link parant">
+                      <a href="/collections/all" class="link-title">
+                        <span class="sp-link-title">Shop</span>
+                        <i class="ri-arrow-down-s-line"></i>
+                      </a>
+                      <!-- Mega menu items here -->
+                    </li>
+
+                    <li class="menu-link">
+                      <a href="/collections" class="link-title">
+                        <span class="sp-link-title">Collection</span>
+                      </a>
+                    </li>
+
+                    <li class="menu-link">
+                      <a href="/blogs/news" class="link-title">
+                        <span class="sp-link-title">Blog</span>
+                      </a>
+                    </li>
+
+                    <li class="menu-link parant">
+                      <a href="#" class="link-title">
+                        <span class="sp-link-title">Pages</span>
+                        <i class="ri-arrow-down-s-line"></i>
+                      </a>
+                      <!-- Submenu here -->
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+
+            <!-- Right Icons -->
+            <div class="header-element right-block">
+              <ul class="shop-element">
+                <li class="side-wrap toggle-wrap d-lg-none d-block">
+                  <button class="navbar-toggle" type="button" id="mobileMenuToggle">
+                    <span class="menu-icon"><i data-feather="menu"></i></span>
+                  </button>
+                </li>
+                <li class="side-wrap search-wrap">
+                  <a class="search-btn header-icon" data-bs-toggle="modal" href="#seachmodal">
+                    <span class="icon"><i data-feather="search"></i></span>
+                  </a>
+                </li>
+                <li class="side-wrap user-wrap">
+                  <a class="header-icon" href="/account/login">
+                    <span class="icon"><i data-feather="user"></i></span>
+                  </a>
+                </li>
+                <li class="side-wrap wishlist-wrap">
+                  <a class="header-icon" href="/pages/wishlist">
+                    <span class="icon"><i data-feather="heart"></i></span>
+                    <span class="wishlist-counter count">0</span>
+                  </a>
+                </li>
+                <li class="side-wrap cart-wrap">
+                  <div class="shopping-cart">
+                    <a class="cart-count header-icon" href="javascript:void(0);">
+                      <span class="icon"><i data-feather="shopping-bag"></i></span>
+                      <span id="cart-total" class="bigcounter count">0</span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ✅ Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="main-menu-area">
+        <nav class="main-navigation">
+          <div class="box-header">
+            <button class="close-box" type="button" id="closeMobileMenu">
+              <i class="ri-close-line"></i>
+            </button>
+          </div>
+          <div class="info-menu">
+            <div class="megamenu-content">
+              <ul class="mobile-main-menu">
+                <li class="menu-link">
+                  <a href="/" class="link-title active" aria-current="page">
+                    <span class="sp-link-title">Home</span>
+                  </a>
+                </li>
+                <li class="menu-link">
+                  <a href="/collections" class="link-title">
+                    <span class="sp-link-title">Collection</span>
+                  </a>
+                </li>
+                <li class="menu-link">
+                  <a href="/blogs/news" class="link-title">
+                    <span class="sp-link-title">Blog</span>
+                  </a>
+                </li>
+                <li class="menu-link">
+                  <a href="/pages/about-us" class="link-title">
+                    <span class="sp-link-title">About us</span>
+                  </a>
+                </li>
+                <!-- Add other mobile-only links here -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Overlay for mobile menu -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+  </section>
+
+
+
+  <!-- Swiper Slider -->
+
+  <section class="section slider-content" id="banner">
+    <div class="content-fit">
+      <div class="home-slider swiper swiper-fade" id="home-slider-1605848244aeafd51a">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="slide-image">
+              <img src="//qx-honee.myshopify.com/cdn/shop/files/slider-1.jpg?v=1725941461&width=1920"
+                srcset="//qx-honee.myshopify.com/cdn/shop/files/slider-1.jpg?v=1725941461&width=352 352w, 
+                                       //qx-honee.myshopify.com/cdn/shop/files/slider-1.jpg?v=1725941461&width=832 832w, 
+                                       //qx-honee.myshopify.com/cdn/shop/files/slider-1.jpg?v=1725941461&width=1200 1200w, 
+                                       //qx-honee.myshopify.com/cdn/shop/files/slider-1.jpg?v=1725941461&width=1920 1920w" width="1920" height="860" loading="lazy" class="img-fluid desk-img">
+
+              <img src="//qx-honee.myshopify.com/cdn/shop/files/mobile-slider-1.jpg?v=1725963823&width=1024"
+                srcset="//qx-honee.myshopify.com/cdn/shop/files/mobile-slider-1.jpg?v=1725963823&width=352 352w, 
+                                       //qx-honee.myshopify.com/cdn/shop/files/mobile-slider-1.jpg?v=1725963823&width=600 600w, 
+                                       //qx-honee.myshopify.com/cdn/shop/files/mobile-slider-1.jpg?v=1725963823&width=832 832w" width="600" height="600" loading="lazy" class="img-fluid mobile-img">
+
+              <div class="container slider-info-content">
+                <div class="row">
+                  <div class="col">
+                    <div
+                      class="slider-text-info item-a5e55ab8-34e4-4159-857d-b260cda00262 slider-content-left slider-text-left">
+                      <span class="subtitle e1" style="color: #eb6e2e;">
+                        <span class="s-title">100% natural honey</span>
+                      </span>
+                      <h2 class="e1" style="color: #333333;">Sweetness in every drop</h2>
+                      <a href="/collections/cookware" class="slider-button btn btn-style e1">Shop now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="slide-image">
+              <img src="//qx-honee.myshopify.com/cdn/shop/files/slider-2.jpg?v=1725962897&width=1920"
+                srcset="//qx-honee.myshopify.com/cdn/shop/files/slider-2.jpg?v=1725962897&width=352 352w, 
+                                       //qx-honee.myshopify.com/cdn/shop/files/slider-2.jpg?v=1725962897&width=832 832w, 
+                                       //qx-honee.myshopify.com/cdn/shop/files/slider-2.jpg?v=1725962897&width=1200 1200w, 
+                                       //qx-honee.myshopify.com/cdn/shop/files/slider-2.jpg?v=1725962897&width=1920 1920w" width="1920" height="860" loading="lazy" class="img-fluid desk-img">
+
+              <img src="//qx-honee.myshopify.com/cdn/shop/files/mobile-slider-2.jpg?v=1725965337&width=1024"
+                srcset="//qx-honee.myshopify.com/cdn/shop/files/mobile-slider-2.jpg?v=1725965337&width=352 352w, 
+                                       //qx-honee.myshopify.com/cdn/shop/files/mobile-slider-2.jpg?v=1725965337&width=600 600w, 
+                                       //qx-honee.myshopify.com/cdn/shop/files/mobile-slider-2.jpg?v=1725965337&width=832 832w" width="600" height="600" loading="lazy" class="img-fluid mobile-img">
+
+              <div class="container slider-info-content">
+                <div class="row">
+                  <div class="col">
+                    <div
+                      class="slider-text-info item-58585e36-a886-4e60-984d-69575dbc4190 slider-content-left slider-text-left">
+                      <span class="subtitle e1" style="color: #eb6e2e;">
+                        <span class="s-title">World bees honey</span>
+                      </span>
+                      <h2 class="e1" style="color: #333333;">A spoonful of pure bliss</h2>
+                      <a href="/collections/manuka-honey" class="slider-button btn btn-style e1">Shop now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="slide-image">
+              <img src="//qx-honee.myshopify.com/cdn/shop/files/slider-3.jpg?v=1725962897&width=1920"
+                srcset="//qx-honee.myshopify.com/cdn/shop/files/slider-3.jpg?v=1725962897&width=352 352w, 
+                                       //qx-honee.myshopify.com/cdn/shop/files/slider-3.jpg?v=1725962897&width=832 832w, 
+                                       //qx-honee.myshopify.com/cdn/shop/files/slider-3.jpg?v=1725962897&width=1200 1200w, 
+                                       //qx-honee.myshopify.com/cdn/shop/files/slider-3.jpg?v=1725962897&width=1920 1920w" width="1920" height="860" loading="lazy" class="img-fluid desk-img">
+
+              <img src="//qx-honee.myshopify.com/cdn/shop/files/mobile-slider-3.jpg?v=1725965337&width=1024"
+                srcset="//qx-honee.myshopify.com/cdn/shop/files/mobile-slider-3.jpg?v=1725965337&width=352 352w, 
+                                       //qx-honee.myshopify.com/cdn/shop/files/mobile-slider-3.jpg?v=1725965337&width=600 600w, 
+                                       //qx-honee.myshopify.com/cdn/shop/files/mobile-slider-3.jpg?v=1725965337&width=832 832w" width="600" height="600" loading="lazy" class="img-fluid mobile-img">
+
+              <div class="container slider-info-content">
+                <div class="row">
+                  <div class="col">
+                    <div
+                      class="slider-text-info item-a1d185d1-8230-4cf9-a456-e85875111264 slider-content-left slider-text-left">
+                      <span class="subtitle e1" style="color: #eb6e2e;">
+                        <span class="s-title">Pure forest honey</span>
+                      </span>
+                      <h2 class="e1" style="color: #333333;">Begin with honey drops</h2>
+                      <a href="/collections/feature-product" class="slider-button btn btn-style e1">Shop now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Navigation Buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-service">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="section-capture">
+            <div class="section-title">
+              <h2>Our Natural Honey</h2>
+            </div>
+          </div>
+
+          <div class="feature-service-main">
+            <div class="f-service-block service-block">
+              <ul class="f-service-ul">
+                <li class="f-service-li">
+                  <div class="f-service-main">
+                    <div class="f-service-icon">
+                      <div class="icon-main">
+                        <span class="icon">
+                          <img src="https://cdn-icons-png.flaticon.com/512/685/685777.png" class="img-fluid icon-1"
+                            alt="Bee icon">
+                          <img src="https://cdn-icons-png.flaticon.com/512/685/685774.png" class="img-fluid icon-2"
+                            alt="Bee icon hover">
+                        </span>
+                      </div>
+                    </div>
+                    <div class="f-service-content">
+                      <h4 class="title">Honey Production</h4>
+                      <p class="desc">Our bees collect nectar from the finest flowers, creating pure, natural honey with
+                        exceptional flavor and health benefits.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="f-service-li">
+                  <div class="f-service-main">
+                    <div class="f-service-icon">
+                      <div class="icon-main">
+                        <span class="icon">
+                          <img src="https://cdn-icons-png.flaticon.com/512/3199/3199955.png" class="img-fluid icon-1"
+                            alt="Honeycomb icon">
+                          <img src="https://cdn-icons-png.flaticon.com/512/3199/3199967.png" class="img-fluid icon-2"
+                            alt="Honeycomb icon hover">
+                        </span>
+                      </div>
+                    </div>
+                    <div class="f-service-content">
+                      <h4 class="title">Naturally Sweet</h4>
+                      <p class="desc">Our honey is 100% pure with no additives or preservatives, offering a natural
+                        sweetness that's perfect for any occasion.</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="f-service-block service-image">
+              <span class="image">
+                <img src="https://qx-honee.myshopify.com/cdn/shop/files/natural-honey.png?v=1725965814&width=1024"
+                  class="img-fluid" alt="Natural Honey Jar">
+              </span>
+            </div>
+
+            <div class="f-service-block service-block">
+              <ul class="f-service-ul">
+                <li class="f-service-li">
+                  <div class="f-service-main">
+                    <div class="f-service-icon">
+                      <div class="icon-main">
+                        <span class="icon">
+                          <img src="https://cdn-icons-png.flaticon.com/512/2331/2331966.png" class="img-fluid icon-1"
+                            alt="Shop icon">
+                          <img src="https://cdn-icons-png.flaticon.com/512/2331/2331949.png" class="img-fluid icon-2"
+                            alt="Shop icon hover">
+                        </span>
+                      </div>
+                    </div>
+                    <div class="f-service-content">
+                      <h4 class="title">Direct from Farm</h4>
+                      <p class="desc">We deliver our honey directly from our farm to your table, ensuring freshness and
+                        preserving all natural nutrients.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="f-service-li">
+                  <div class="f-service-main">
+                    <div class="f-service-icon">
+                      <div class="icon-main">
+                        <span class="icon">
+                          <img src="https://cdn-icons-png.flaticon.com/512/1570/1570109.png" class="img-fluid icon-1"
+                            alt="Protection icon">
+                          <img src="https://cdn-icons-png.flaticon.com/512/1570/1570132.png" class="img-fluid icon-2"
+                            alt="Protection icon hover">
+                        </span>
+                      </div>
+                    </div>
+                    <div class="f-service-content">
+                      <h4 class="title">Quality Assurance</h4>
+                      <p class="desc">Every batch of our honey undergoes rigorous testing to ensure the highest quality
+                        standards and purity.</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="section" id="description">
+    <div class="content-fit">
+      <div class="number">02</div>
+      <div class="des">
+        <div class="title">Honeybee</div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus voluptas a porro libero
+          recusandae quae, aut ratione, incidunt laborum, necessitatibus similique enim doloremque ex.
+          Laudantium obcaecati aspernatur doloremque illo beatae, maxime hic itaque consequatur nisi
+          accusantium veritatis, voluptatem ratione! Placeat numquam nisi reiciendis harum quibusdam tempore
+          eaque deleniti accusantium, veniam quae eos sed, asperiores laborum corporis odit mollitia.</p>
+      </div>
+    </div>
+    <!-- <img src="/Images/leaf1.png" class="decorate" alt="" style="width: 70vw; bottom: 0; right: 0;"> -->
+  </div>
+
+  <div class="section" id="contact">
+    <div class="content-fit">
+      <div class="number">03</div>
+      <div class="des">
+        <div class="title">CONTACT</div>
+        <table>
+          <tr>
+            <td>Email</td>
+            <td>contact@beeworks3d.com</td>
+          </tr>
+          <tr>
+            <td>Phone</td>
+            <td>+1 123 456 789</td>
+          </tr>
+          <tr>
+            <td>Website</td>
+            <td>beeworks3d.com</td>
+          </tr>
+          <tr>
+            <td>Youtube</td>
+            <td>@beeworks</td>
+          </tr>
+        </table>
+        <div class="sign">BeeWorks</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="container3D"></div>
+
+  <!-- Scripts -->
+  <script type="module" src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script>
+    // Initialize Feather Icons
+    document.addEventListener('DOMContentLoaded', function () {
+      feather.replace();
+
+      // Mobile Menu Toggle
+      const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const closeMobileMenu = document.getElementById('closeMobileMenu');
+      const menuOverlay = document.getElementById('menuOverlay');
+
+      if (mobileMenuToggle && mobileMenu) {
+        mobileMenuToggle.addEventListener('click', function () {
+          mobileMenu.classList.add('active');
+          menuOverlay.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        });
+
+        closeMobileMenu.addEventListener('click', function () {
+          mobileMenu.classList.remove('active');
+          menuOverlay.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+
+        menuOverlay.addEventListener('click', function () {
+          mobileMenu.classList.remove('active');
+          menuOverlay.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      }
+
+      // Handle dropdown menus on hover (desktop)
+      const menuParents = document.querySelectorAll('.menu-link.parant');
+
+      menuParents.forEach(parent => {
+        parent.addEventListener('mouseenter', function () {
+          const dropdown = this.querySelector('.dropdown-submenu');
+          if (dropdown) {
+            dropdown.style.display = 'block';
+          }
+        });
+
+        parent.addEventListener('mouseleave', function () {
+          const dropdown = this.querySelector('.dropdown-submenu');
+          if (dropdown && !dropdown.classList.contains('show')) {
+            dropdown.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var swiper = new Swiper('.home-slider', {
+        effect: 'fade',
+        fadeEffect: {
+          crossFade: true
+        },
+        loop: true,
+        speed: 1000,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    });
+  </script>
+
+</body>
+
+</html>
