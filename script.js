@@ -21,11 +21,13 @@ loader.load(
     bee = gltf.scene;
     bee.scale.set(0.03, 0.03, 0.03); // Small size
     scene.add(bee);
+
     mixer = new THREE.AnimationMixer(bee);
     if (gltf.animations.length > 0) {
       mixer.clipAction(gltf.animations[0]).play();
     }
-    modelMove();
+
+    modelMove(); // first position set
   },
   function (xhr) {
     console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
@@ -56,24 +58,39 @@ reRender3D();
 // Scroll based positions
 let arrPositionModel = [
   {
-    id: "banner",
-    position: { x: 1, y: -0.5, z: -5 },
-    rotation: { x: 0, y: 1.5, z: 0 },
+    id: "one",
+    position: { x: 1.5, y: -0.1, z: -0 },
+    rotation: { x: 5, y: -1, z: 5 },
   },
   {
-    id: "intro",
-    position: { x: 1, y: -1, z: -5 },
-    rotation: { x: 0.5, y: -0.5, z: 0.5 },
+    id: "two",
+    position: { x: 1, y: 0, z: -1 },
+    rotation: { x: 0.5, y: -2, z: 0 },
   },
   {
-    id: "description",
+    id: "three",
     position: { x: -1, y: -1, z: -5 },
     rotation: { x: 0, y: 0.5, z: 0.2 },
   },
   {
-    id: "contact",
+    id: "four",
     position: { x: 0.45, y: -2, z: -10 },
     rotation: { x: 0.2, y: -0.5, z: -0.2 },
+  },
+  {
+    id: "five",
+    position: { x: -1, y: -1, z: -5 },
+    rotation: { x: 0, y: 0.5, z: 0.2 },
+  },
+  {
+    id: "six",
+    position: { x: 0.45, y: -2, z: -10 },
+    rotation: { x: 0.2, y: -0.5, z: -0.2 },
+  },
+  {
+    id: "seven",
+    position: { x: 1, y: 0, z: -1 },
+    rotation: { x: 0.5, y: -2, z: 0 },
   },
 ];
 
@@ -116,29 +133,4 @@ window.addEventListener("resize", () => {
   renderer.setSize(window.innerWidth, window.innerHeight);
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
-});
-
-// Mouse move control (position + rotation instant follow)
-window.addEventListener("mousemove", (event) => {
-  if (!bee) return;
-
-  // Normalize mouse (-1 to 1)
-  const mouseX = (event.clientX / window.innerWidth) * 2 - 1;
-  const mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
-
-  // Move bee towards cursor (fast & instant)
-  gsap.to(bee.position, {
-    x: mouseX * 3, // adjust multiplier for spread
-    y: mouseY * 2,
-    duration: 0.5, // slower than instant → natural lag
-    ease: "power2.out",
-  });
-
-  // Rotate bee instantly towards cursor direction
-  gsap.to(bee.rotation, {
-    x: mouseY * 0.5,
-    y: mouseX * 1.0,
-    duration: 0.5, // same delay as position
-    ease: "power2.out",
-  });
 });

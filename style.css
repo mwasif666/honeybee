@@ -5,8 +5,6 @@
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  background-color: #1b1b1b;
-  color: #eef8ce;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
 }
@@ -34,6 +32,47 @@ body {
   margin: auto;
   position: relative;
 }
+.one,
+.two {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+#two::before {
+  background: url(./Images/side1.png) no-repeat center/contain;
+  position: absolute;
+  content: "";
+  width: 400px;
+  height: 400px;
+  /* z-index: 99999; */
+  right: -110px;
+  opacity: 0.2;
+}
+#two::after {
+  background: url(./Images/side2.png) no-repeat center/contain;
+  position: absolute;
+  content: "";
+  width: 400px;
+  height: 400px;
+  /* z-index: 99999; */
+  left: -110px;
+  opacity: 0.2;
+}
+
+#one {
+  background: url(./Images/bgmain2.png) no-repeat center/cover;
+}
+#two {
+  background: linear-gradient(
+    rgba(246, 230, 217, 0.5) 0%,
+    rgba(246, 230, 217, 0.5) 100%
+  );
+  position: relative;
+  z-index: -1;
+  color: #ba5703;
+  overflow: hidden;
+}
+
 header {
   padding-block: 1em;
   position: fixed;
