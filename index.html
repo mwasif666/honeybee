@@ -17,48 +17,104 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css"> -->
   <link rel="stylesheet" href="./style.css" />
+
+  <!-- Apple Favicon -->
+  <link rel="apple-touch-icon" href="assets/img/logo/favicon.svg">
+
+  <!-- All Device Favicon -->
+  <link rel="icon" href="assets/img/logo/icon.svg">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+  <!-- All Icons -->
+  <link rel="stylesheet" href="assets/all-icons/myicon.css">
+
+  <!-- Plugin -->
+  <link rel="stylesheet" href="assets/css/plugins.css">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Responsive -->
+  <link rel="stylesheet" href="assets/css/responsive.css">
   <link rel="stylesheet" href="./customstyling.css" />
 </head>
 
 <body>
   <!-- Header Section -->
   <!-- ✅ Desktop Header -->
+  <!-- <div class="preloder"></div> -->
+  <header>
 
-  <nav class="navbar navbar-expand-lg navbar-honeybee fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <i class="fas fa-bee"></i> Honeybee
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Shop</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link cart-icon" href="#">
-              <i class="fas fa-shopping-cart"></i>
-              <span class="cart-count">3</span>
-            </a>
-          </li>
-        </ul>
+    <div id="main-wrapper">
+      <!-- Menu Bar Start -->
+      <div class="menu-bar v1">
+        <div class="container">
+          <div class="menu-bar-content">
+            <div class="menu-logo">
+              <a href="index.html"><img src="https://dropbelaravel.bracketweb.com/assets/images/logo-dark.png"
+                  alt="Logo"></a>
+            </div>
+            <nav class="main-menu">
+              <ul>
+                <li class="">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="">
+                  <a href="./about-us.html">About Us</a>
+                </li>
+                <li class="">
+                  <a href="./shop.html">Shop</a>
+                </li>
+                <li class="">
+                  <a href="./contact.html">Contact</a>
+
+                </li>
+              </ul>
+            </nav>
+            <div class="menu-right">
+              <ul>
+                <li>
+                  <button class="search-open-btn">
+                    <span class="my-icon icon-magnifying-glass"></span>
+                  </button>
+                  <div class="top-bar-search">
+                    <button class="search-close">
+                      <span class="my-icon icon-close"></span>
+                    </button>
+                    <form action="#">
+                      <input type="search" placeholder="Search...">
+                      <button type="submit">
+                        <span class="my-icon icon-magnifying-glass"></span>
+                      </button>
+                    </form>
+                  </div>
+                </li>
+                <li>
+                  <div class="shop-card-list">
+                    <a class="shop-card-btn" href="#">
+                      <span class="price">$458.50</span>
+                      <span class="my-icon icon-shop-bag"></span>
+                      <span class="count">03</span>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </nav>
+      <!-- <div class="h-spach"></div> -->
+      <!-- Menu Bar End -->
+  </header>
 
   <!-- Swiper Slider -->
   <div class="section" id="one">
@@ -66,7 +122,7 @@
       <img class="slider-top-img" id="leaf"
         src="https://preview.vwthemesdemo.com/vw-honey-shop-pro/wp-content/themes/vw-honey-shop-pro/assets/images/slider/slider-top.png"
         alt="Image" />
-      <h1 data-text="Honey">Honey</h1>
+      <h1 data-text="Hunz Honey">Hunz Honey</h1>
       <img id="fanta" src="./Images/bottle.png" alt="" />
     </div>
     <div class="main-div">
@@ -81,97 +137,225 @@
   <div class="section" id="two">
     <div class="container">
       <div class="two">
-        <div class="lft-two">
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#e04428"
-              d="M41.5,-59.5C49.8,-51.1,49.7,-33.6,50.7,-19.2C51.7,-4.7,53.8,6.7,52.4,18.9C51.1,31.1,46.3,44.1,36.9,52.9C27.6,61.8,13.8,66.5,-2.5,70C-18.8,73.4,-37.7,75.6,-52.5,68.5C-67.3,61.5,-78.2,45.2,-84.5,27.1C-90.9,9,-92.7,-10.8,-80.5,-19.3C-68.3,-27.8,-42.1,-24.8,-26.3,-30.8C-10.6,-36.8,-5.3,-51.7,5.7,-59.5C16.6,-67.3,33.2,-68,41.5,-59.5Z"
-              transform="translate(100 100)" />
-          </svg>
-        </div>
-        <div class="rght-two">
-          <h1>Organic and Healthy Honey is Made Here</h1>
-          <p>
-            At Hunzzz Honey , we are dedicated to bringing you the purest and most authentic Sidr honey straight from
-            the source.
-            Harvested from the blossoms of the sacred Sidr tree, our honey is prized for its rich taste, natural healing
-            properties,
-            and cultural heritage.
-            We work closely with trusted beekeepers who follow traditional, ethical, and sustainable practices, ensuring
-            that every
-            jar of honey is 100% raw, unfiltered, and free from additives. From hive to home, we prioritize quality and
-            transparency
-            so you can enjoy honey the way nature intended.
-            For us, this is more than just honey—it’s a tradition of wellness, purity, and care that we are proud to
-            share with
-            families around the world.
-            🌿 Pure. Natural. Authentic. That’s our promise.
+        <div class="row">
 
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="section" id="three">
-    <div class="three">
-      <div class="card">
-        <!-- <img class="lemon lemon1" src="Assets/lemon.webp" alt=""> -->
-        <img class="imageproduct" src="./Images/bottle.png" alt="" />
-        <div class="card-details">
-          <h1 class="titleproduct">Honeybee</h1>
-          <span>
-            <h2>€ 20</h2>
-          </span>
-          <div class="actions">
-            <button class="icon-btn cart-btn" title="Add to Cart">
-              <i class="fas fa-shopping-cart"></i>
-            </button>
-            <button class="icon-btn wishlist-btn" title="Add to Wishlist">
-              <i class="fas fa-heart"></i>
-            </button>
+          <div class="col-lg-6">
+            <!-- <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#e04428"
+                d="M41.5,-59.5C49.8,-51.1,49.7,-33.6,50.7,-19.2C51.7,-4.7,53.8,6.7,52.4,18.9C51.1,31.1,46.3,44.1,36.9,52.9C27.6,61.8,13.8,66.5,-2.5,70C-18.8,73.4,-37.7,75.6,-52.5,68.5C-67.3,61.5,-78.2,45.2,-84.5,27.1C-90.9,9,-92.7,-10.8,-80.5,-19.3C-68.3,-27.8,-42.1,-24.8,-26.3,-30.8C-10.6,-36.8,-5.3,-51.7,5.7,-59.5C16.6,-67.3,33.2,-68,41.5,-59.5Z"
+                transform="translate(100 100)" />
+            </svg> -->
           </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-details">
-          <h3 class="imageproduct"></h3>
-          <h1 class="titleproduct">Honeybee</h1>
-          <span>
-            <h2>€ 20</h2>
-          </span>
-          <div class="actions">
-            <button class="icon-btn cart-btn" title="Add to Cart">
-              <i class="fas fa-shopping-cart"></i>
-            </button>
-            <button class="icon-btn wishlist-btn" title="Add to Wishlist">
-              <i class="fas fa-heart"></i>
-            </button>
-          </div>
-        </div>
-      </div>
 
-      <div class="card">
-        <!-- <img class="lemon lemon2" src="Assets/lemon.webp" alt=""> -->
-        <img class="imageproduct" src="./Images/bottle.png" alt="" />
-        <div class="card-details">
-          <h1 class="titleproduct">Honeybee</h1>
-          <span>
-            <h2>€ 20</h2>
-          </span>
-          <div class="actions">
-            <button class="icon-btn cart-btn" title="Add to Cart">
-              <i class="fas fa-shopping-cart"></i>
-            </button>
-            <button class="icon-btn wishlist-btn" title="Add to Wishlist">
-              <i class="fas fa-heart"></i>
-            </button>
+          <div class="col-lg-6">
+            <div class="content-left">
+              <div class="section-title v1">
+                <h6>About Us</h6>
+                <h2>Beeberry Honey is One Iconic Brand.</h2>
+                <p>For over 27 years, our family has been keeping bees around Beechworth producing pure and natural
+                  Australian
+                  honey. Traditions, techniques, and tales are now being passed from the 4th to the 5th generation.</p>
+              </div>
+              <ul class="check-mark-list v2 mt-5">
+                <li>
+                  <span class="my-icon icon-check"></span>
+                  <h6>Promotes burn and wound healing</h6>
+                </li>
+                <li>
+                  <span class="my-icon icon-check"></span>
+                  <h6>Better for blood sugar levels than regular sugar</h6>
+                </li>
+                <li>
+                  <span class="my-icon icon-check"></span>
+                  <h6>May help suppress coughing in children</h6>
+                </li>
+              </ul>
+              <a href="services-details.html" class="link-anime v2 mt-5">read our story</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="grid-banner-section section" id="four">
+  <div class="section py-5" id="three">
+    <div class="container">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="product-card v1">
+              <div class="product-img">
+                <a href="shop-details.html">
+                  <img src="./Images/bottle.png" alt="items">
+                </a>
+              </div>
+              <div class="product-content">
+                <h4><a href="shop-details.html">Premium Honey</a></h4>
+                <h5>$10.50 <del>$12.50</del></h5>
+                <p>Weight: <strong>1KG</strong></p>
+              </div>
+              <ul class="shop-btns">
+                <li><a href="#"><span class="my-icon icon-heart"></span></a></li>
+                <li><a href="#"><span class="my-icon icon-shop-bag"></span></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="product-card v1">
+              <div class="product-img">
+                <a href="shop-details.html">
+                  <h1>&nbsp;</h1>
+                </a>
+              </div>
+              <div class="product-content">
+                <h4><a href="shop-details.html">Organic Honey</a></h4>
+                <h5>$12.50</h5>
+                <p>Weight: <strong>1KG</strong></p>
+              </div>
+              <ul class="shop-btns">
+                <li><a href="#"><span class="my-icon icon-heart"></span></a></li>
+                <li><a href="#"><span class="my-icon icon-shop-bag"></span></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="product-card v1">
+              <div class="product-img">
+                <a href="shop-details.html">
+                  <img src="./Images/bottle.png" alt="items">
+                </a>
+              </div>
+              <div class="product-content">
+                <h4><a href="shop-details.html">Jarrah Honey</a></h4>
+                <h5>$13.50</h5>
+                <p>Weight: <strong>1KG</strong></p>
+              </div>
+              <ul class="shop-btns">
+                <li><a href="#"><span class="my-icon icon-heart"></span></a></li>
+                <li><a href="#"><span class="my-icon icon-shop-bag"></span></a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+      </div>
+    </div>
+  </div>
+
+  <section class="our-services v1" id="our_services" id="four">
+    <div class="container">
+      <div class="section-title-center v1">
+        <h6>Our Services</h6>
+        <h2>We Provide The Best Quality</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-xl-3">
+          <div class="service-card">
+            <div class="my-icon icon-honeycomb"></div>
+            <h4><a href="our-services.html">Honey Production</a></h4>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="service-card">
+            <div class="my-icon icon-bee-jar-flay"></div>
+            <h4><a href="our-services.html">Beekeeping Classes</a></h4>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="service-card">
+            <div class="my-icon icon-hone-shop-bag"></div>
+            <h4><a href="our-services.html">Honey Shop</a></h4>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="service-card">
+            <div class="my-icon icon-honey-sarf"></div>
+            <h4><a href="our-services.html">Swarm Removal</a></h4>
+          </div>
+        </div>
+      </div>
+      <div class="more-link">
+        <a class="link-anime v1" href="services-details.html">more services</a>
+      </div>
+    </div>
+  </section>
+  <!-- Our Services End -->
+  <!-- Why Us Start-->
+  <section class="why-us v1" id="five">
+    <div class="container">
+      <div class="section-title-center v1">
+        <h6>Why Us</h6>
+        <h2>Why Choose Our Products</h2>
+      </div>
+      <div class="row">
+        <div class="col-xl-4">
+          <div class="big-pic wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
+            <img src="https://dropbelaravel.bracketweb.com/assets/images/products/product-1-4.png" alt="pic">
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4 order-xl-first">
+          <ul class="list-1">
+            <li class="wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
+              <div class="my-icon icon-bee"></div>
+              <div class="text">
+                <h5>Natural Bees</h5>
+                <p>Honey starts as flower nectar collected by bees, which broken .</p>
+              </div>
+            </li>
+            <li class="wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.8s">
+              <div class="my-icon icon-flower-bee"></div>
+              <div class="text">
+                <h5>Flower Products</h5>
+                <p>Honey starts as flower nectar collected by bees, which broken .</p>
+              </div>
+            </li>
+            <li class="wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">
+              <div class="my-icon icon-honeycomb"></div>
+              <div class="text">
+                <h5>Honey Comb</h5>
+                <p>Honey starts as flower nectar collected by bees, which broken .</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <ul class="list-2">
+            <li class="wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
+              <div class="my-icon icon-bees-seal-cells"></div>
+              <div class="text">
+                <h5>Bees Seal Cells</h5>
+                <p>Honey starts as flower nectar collected by bees, which broken .</p>
+              </div>
+            </li>
+            <li class="wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.8s">
+              <div class="my-icon icon-bee-jar"></div>
+              <div class="text">
+                <h5>100 % Naturally</h5>
+                <p>Honey starts as flower nectar collected by bees, which broken .</p>
+              </div>
+            </li>
+            <li class="wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">
+              <div class="my-icon icon-bee-strong"></div>
+              <div class="text">
+                <h5>Increase Immunity</h5>
+                <p>Honey starts as flower nectar collected by bees, which broken .</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="grid-banner-section section" id="six">
     <div class="container py-5">
       <div class="row justify-content-center">
         <div class="col-lg-10">
@@ -201,7 +385,7 @@
     </div>
   </div>
 
-  <div class="testimonial-section section" id="five">
+  <div class="testimonial-section section" id="seven">
     <div class="container">
       <h2 class="testimonial-title">What Our Clients Say</h2>
       <!-- Swiper -->
@@ -295,7 +479,7 @@
     </div>
   </div>
 
-  <section class="brand-logo-slider section" id="six">
+  <section class="brand-logo-slider section" id="eight">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -328,104 +512,130 @@
       </div>
     </div>
   </section>
-
+  </div>
 
   <!-- Footer -->
-  <footer class="site-footer section" id="seven">
-    <div class="site-footer__top">
+  <footer id="nine">
+    <div class="info-footer v1 bg-cover-center" style="margin-top:80px ;"
+      data-background="//beeswax-theme.myshopify.com/cdn/shop/files/honey_04de6ac7-7a95-4c9e-a645-6c2e6ab4fd54.png?v=1642766463">
       <div class="container">
-        <div class="row">
-          <!-- Information Section -->
-          <div class="col-lg-3 col-md-6 col-sm-12 footer__item mb-4">
-            <div class="text-start">
-              <h5 class="footer__title">INFORMATION</h5>
-              <ul class="footer_menu">
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Order Status</a></li>
-                <li><a href="#">Delivery Choices</a></li>
-                <li><a href="#">Payment Options</a></li>
-                <li><a href="#">Returns</a></li>
-                <li><a href="#">Price Promise</a></li>
-              </ul>
-            </div>
-          </div>
 
-          <!-- Contact Section -->
-          <div class="col-lg-4 col-md-6 col-sm-12 footer__item mb-4">
-            <div class="text-start">
-              <h5 class="footer__title">CONTACT US</h5>
-              <ul class="contact-info">
-                <li class="address">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <address>No: 58 A, East Madison Street, Baltimore, MD, USA 4508</address>
-                </li>
-                <li class="contact-phone">
-                  <i class="fas fa-phone"></i>(+0000) 123-456-789
-                </li>
-                <li class="office-mail">
-                  <a href="mailto:info@example.com">
-                    <i class="far fa-envelope"></i>info@example.com
-                  </a>
-                </li>
-              </ul>
-
-              <!-- Social Icons -->
-              <ul class="dt-sc-social-icons">
-                <li>
-                  <a class="icon-fallback-text" target="_blank" href="#" title="Facebook">
-                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                  </a>
-                </li>
-                <li>
-                  <a class="icon-fallback-text" target="_blank" href="#" title="Pinterest">
-                    <i class="fab fa-pinterest-p" aria-hidden="true"></i>
-                  </a>
-                </li>
-                <li>
-                  <a class="icon-fallback-text" target="_blank" href="#" title="Instagram">
-                    <i class="fab fa-instagram" aria-hidden="true"></i>
-                  </a>
-                </li>
-                <li>
-                  <a class="icon-fallback-text" target="_blank" href="#" title="Linkedin">
-                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Newsletter Section -->
-          <div class="col-lg-5 col-md-12 col-sm-12 footer__item mb-4">
-            <div class="text-start">
-              <h5 class="footer__title">NEWSLETTER</h5>
-              <form method="post" action="#" id="newsletter-footer" class="contact-form">
-                <input type="hidden" name="form_type" value="customer">
-                <input type="hidden" name="utf8" value="✓">
-                <input type="hidden" name="contact[tags]" value="prospect,newsletter">
-                <input type="hidden" name="contact[context]" value="footer">
-
-                <div class="footer__newsletter">
-                  <input type="email" value="" placeholder="Enter your email" name="contact[email]" id="Email-footer"
-                    class="footer__newsletter-input" required>
-                  <button type="submit" class="footer__newsletter-btn" name="commit">Subscribe</button>
+        <div class="info-content">
+          <div class="row">
+            <div class="col-md-6 col-lg-12 col-xl-3">
+              <div class="footer__widget">
+                <div class="footer__widget-content">
+                  <div class="footer-left">
+                    <div class="footer-logo">
+                      <a href="index.html">
+                        <img src="https://dropbelaravel.bracketweb.com/assets/images/logo-dark.png" alt="Logo">
+                      </a>
+                    </div>
+                    <p>Beeberrry is a leading brand. We are 8 years old and have largest
+                      network. Raw honey contains an array of plant chemicals that act as
+                      antioxidants.</p>
+                    <ul class="socials-links-box v1">
+                      <li><a href="#"><span class="my-icon icon-facebook"></span></a></li>
+                      <li><a href="#"><span class="my-icon icon-twitter"></span></a></li>
+                      <li><a href="#"><span class="my-icon icon-pinterest-p"></span></a></li>
+                      <li><a href="#"><span class="my-icon icon-instagram"></span></a></li>
+                    </ul>
+                  </div>
                 </div>
-
-                <p>Sign up with your email address to receive news and updates</p>
-              </form>
+              </div>
             </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+              <div class="footer__widget">
+                <h4 class="footer__widget-title">Useful Links</h4>
+                <div class="footer__widget-content">
+                  <div class="useful-link">
+                    <ul>
+                      <li><a href="#">Terms &amp; Conditions</a></li>
+                      <li><a href="#">Payment Methods</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Product Complaint</a></li>
+                      <li><a href="#">Careers</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+              <div class="footer__widget">
+                <h4 class="footer__widget-title">Contact Us</h4>
+                <div class="footer__widget-content">
+                  <div class="info-link">
+                    <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <span class="my-icon icon-phone"></span>
+                          <span class="text">+91-562 687 8900</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="my-icon icon-envelope"></span>
+                          <span class="text">bill.sanders@example.com</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="my-icon icon-envelope"></span>
+                          <span class="text">deanna.curtis@example.com</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+              <div class="footer__widget">
+                <h4 class="footer__widget-title">Instagram</h4>
+                <div class="footer__widget-content">
+                  <div class="insta-gallry">
+                    <ul>
+                      <li><a href="#"><img src="assets/img/footer/insta-1.png" alt="insta"></a></li>
+                      <li><a href="#"><img src="assets/img/footer/insta-2.png" alt="insta"></a></li>
+                      <li><a href="#"><img src="assets/img/footer/insta-3.png" alt="insta"></a></li>
+                      <li><a href="#"><img src="assets/img/footer/insta-4.png" alt="insta"></a></li>
+                      <li><a href="#"><img src="assets/img/footer/insta-5.png" alt="insta"></a></li>
+                      <li><a href="#"><img src="assets/img/footer/insta-6.png" alt="insta"></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-footer">
+          <div class="left-text">
+            <p>Copyright © 2025 by <a href="#">Beeberry</a>, All Rights Reserved.</p>
+          </div>
+          <div class="pement-img">
+            <img src="assets/img/footer/pement.png" alt="pement">
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Footer Bottom -->
-
   </footer>
   <div id="container3D"></div>
 
   <!-- Scripts -->
   <script type="module" src="./script.js"></script>
+
+  <!-- jQuery -->
+  <script src="assets/js/jquery-3.6.3.min.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <!-- Plugins -->
+  <script src="assets/js/plugins.js"></script>
+
+  <!-- Index -->
+  <script src="assets/js/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -438,20 +648,21 @@
     integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="bootle.js"></script>
+
   <script>
     var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 20,
       loop: true,
-      spaceBetween: 40,
-      slidesPerView: 1,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-      },
       breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
         768: {
           slidesPerView: 2,
         },
@@ -462,63 +673,6 @@
     });
   </script>
 
-  <script>
-    // var tl = gsap.timeline({
-    //   scrollTrigger: {
-    //     trigger: ".two",
-    //     start: "0% 95%",
-    //     end: "70% 50%",
-    //     scrub: true,
-    //   },
-    // });
-
-    // tl.to(
-    //   "#fanta",
-    //   {
-    //     top: "110%",
-    //     left: "0%",
-    //   },
-    //   "orange"
-    // );
-    var tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".two",
-        start: "0% 95%",
-        end: "70% 50%",
-        scrub: true,
-        // markers: true,
-      },
-    });
-
-    tl.to(
-      "#fanta",
-      {
-        top: "120%",
-        left: "0%",
-      },
-      "orange"
-    );
-
-    var tl2 = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".three",
-        start: "0% 95%",
-        end: "20% 50%",
-        scrub: true,
-        // markers: true,
-      },
-    });
-
-    tl2.to(
-      "#fanta",
-      {
-        width: "26%",
-        top: "206%",
-        left: "38%",
-      },
-      "ca"
-    );
-  </script>
 </body>
 
 </html>

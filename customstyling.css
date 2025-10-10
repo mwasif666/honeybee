@@ -29,33 +29,6 @@ body::-webkit-scrollbar {
   background-color: orangered;
 }
 
-nav {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 10vh;
-  padding: 0vw 10vw;
-  z-index: 99;
-}
-
-nav a,
-i {
-  font-size: 1vw;
-  text-decoration: none;
-  color: #fff;
-}
-
-.cntr-nav {
-  display: flex;
-  gap: 3vw;
-}
-
-nav i {
-  font-size: 1.5vw;
-}
-
 .one {
   display: flex;
   align-items: center;
@@ -83,9 +56,9 @@ nav i {
 
 .one h1 {
   color: transparent;
-  -webkit-text-stroke: 2px #ba5703;
+  -webkit-text-stroke: 2px #ba5703 !important;
   position: relative;
-  font-size: 15vw;
+  font-size: 9vw;
   font-weight: bold;
   text-transform: uppercase;
   margin: 0;
@@ -98,7 +71,7 @@ nav i {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100% !important;
   animation: animate 3s linear infinite;
 }
 
@@ -164,7 +137,8 @@ nav i {
 .two {
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 860px;
+  padding-top: 200px;
 }
 
 .lft-two,
@@ -203,6 +177,7 @@ nav i {
   align-items: center;
   justify-content: center;
   gap: 5vw;
+  /* background-image: url(https://dropbelaravel.bracketweb.com/assets/images/shapes/shape-about-2-1.png); */
 }
 
 .card {
@@ -398,7 +373,7 @@ nav i {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("https://beeswax-theme.myshopify.com/cdn/shop/files/bg-2_900x.jpg?v=1642581700") !important;
+  /* background-image: url("https://beeswax-theme.myshopify.com/cdn/shop/files/bg-2_900x.jpg?v=1642581700") !important; */
   height: 100vh;
   width: 100%;
   position: relative;
@@ -464,108 +439,6 @@ nav i {
 i {
   transition: transform 0.3s ease;
   color: #ba5703;
-}
-
-/* Cart Button Hover Effects */
-.cart-btn:hover {
-  background: #4caf50;
-  color: white;
-  transform: translateY(-5px) scale(1.1);
-  box-shadow: 0 8px 15px rgba(76, 175, 80, 0.3);
-}
-.cart-btn:hover i {
-  color: white;
-}
-
-.cart-btn:hover::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.4),
-    transparent
-  );
-  transition: left 0.5s ease;
-}
-
-.cart-btn:hover::before {
-  left: 100%;
-}
-
-/* Wishlist Button Hover Effects */
-.wishlist-btn:hover {
-  background: #e91e63;
-  color: white;
-  transform: translateY(-5px) scale(1.1);
-  box-shadow: 0 8px 15px rgba(233, 30, 99, 0.3);
-}
-
-.wishlist-btn:hover i {
-  animation: heartbeat 0.5s ease;
-  color: white;
-}
-
-@keyframes heartbeat {
-  0% {
-    transform: scale(1);
-  }
-  25% {
-    transform: scale(1.2);
-  }
-  50% {
-    transform: scale(1);
-  }
-  75% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-/* Tooltip Styling */
-.icon-btn::after {
-  content: attr(title);
-  position: absolute;
-  bottom: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 12px;
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease, bottom 0.3s ease;
-}
-
-.icon-btn:hover::after {
-  opacity: 1;
-  bottom: -35px;
-}
-
-/* Pulse effect on hover */
-.icon-btn:hover {
-  animation: pulse 1s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.4);
-  }
-  70% {
-    box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
-  }
 }
 
 /* Responsive design */
@@ -747,173 +620,29 @@ i {
   justify-content: center;
   gap: 2rem;
 }
-/* footer */
-.site-footer {
-  margin-top: 80px;
-  background-image: url("//beeswax-theme.myshopify.com/cdn/shop/files/honey_04de6ac7-7a95-4c9e-a645-6c2e6ab4fd54.png?v=1642766463");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: fit-content;
-  color: #333;
-  padding: 40px 0px;
-}
-
-.site-footer__top {
-  padding-top: 80px;
-  padding-bottom: 60px;
-}
-
-.footer__title {
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: #333;
-  font-size: 18px;
-}
-
-.footer_menu {
-  list-style: none;
-  padding-left: 0;
-}
-
-.footer_menu li {
-  margin-bottom: 10px;
-}
-
-.footer_menu a {
-  color: #555;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.footer_menu a:hover {
-  color: #000;
-}
-
-.contact-info {
-  list-style: none;
-  padding-left: 0;
-}
-
-.contact-info li {
-  margin-bottom: 15px;
-  display: flex;
-  align-items: flex-start;
-}
-
-.contact-info i {
-  margin-right: 10px;
-  color: #555;
-  width: 20px;
-}
-
-.contact-info a {
-  color: #555;
-  text-decoration: none;
-}
-
-.contact-info a:hover {
-  color: #000;
-}
-
-.dt-sc-social-icons {
-  list-style: none;
-  padding-left: 0;
-  display: flex;
-  margin-top: 20px;
-}
-
-.dt-sc-social-icons li {
-  margin-right: 15px;
-}
-
-.dt-sc-social-icons a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background-color: #f1f1f1;
-  color: #555;
-  transition: all 0.3s;
-}
-
-.dt-sc-social-icons a:hover {
-  background-color: #333;
-  color: white;
-}
-
-.footer__newsletter {
-  display: flex;
-  margin-bottom: 15px;
-}
-
-.footer__newsletter-input {
-  flex: 1;
-  padding: 10px 15px;
-  border: 1px solid #ddd;
-  border-radius: 4px 0 0 4px;
-  outline: none;
-}
-
-.footer__newsletter-btn {
-  background-color: #333;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 0 4px 4px 0;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.footer__newsletter-btn:hover {
-  background-color: #555;
-}
-
-.site-footer__bottom {
-  background-color: rgba(0, 0, 0, 0.05);
-  padding: 20px 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.footer__copyright {
-  color: #666;
-  font-size: 14px;
-}
-
-.footer__copyright a {
-  color: #333;
-  text-decoration: none;
-}
-
-.footer__copyright a:hover {
-  text-decoration: underline;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .site-footer__top {
+/* Responsive */
+@media (max-width: 769px) {
+  .one {
+    height: 37vh;
+  }
+  .two {
+    height: 100%;
+    padding-top: 40px;
+  }
+  .main-div {
+    bottom: -30px;
+  }
+  #two::after {
+    display: none;
+  }
+  #two {
     padding-top: 50px;
     padding-bottom: 40px;
   }
-
-  .footer__item {
-    margin-bottom: 30px;
+  #three {
+    padding: 0 !important;
   }
-
-  .footer__newsletter {
-    flex-direction: column;
-  }
-
-  .footer__newsletter-input {
-    border-radius: 4px;
-    margin-bottom: 10px;
-  }
-
-  .footer__newsletter-btn {
-    border-radius: 4px;
-    width: 100%;
+  .grid-banner-content p {
+    padding: 0px;
   }
 }
