@@ -1,0 +1,253 @@
+/* === CONTACT PAGE STYLING FOR HUNZZZ HONEY === */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #fffaf2;
+  color: #333;
+}
+
+/* --- Navbar Custom Styling --- */
+.navbar-honeybee {
+  background-color: #fff7e6;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-honeybee .navbar-brand {
+  color: #b67c23;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.navbar-honeybee .nav-link {
+  color: #333;
+  font-weight: 500;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+.navbar-honeybee .nav-link:hover,
+.navbar-honeybee .nav-link.active {
+  color: #b67c23;
+}
+
+/* --- Contact Section --- */
+.contact-section {
+  padding: 100px 20px 80px;
+  background-color: #fffaf2;
+  margin-top: 7rem;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  flex: 1 1 400px;
+}
+
+.contact-info h2 {
+  font-size: 2.2rem;
+  color: #b67c23;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.contact-details {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-details li {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #333;
+}
+
+.contact-details i {
+  color: #b67c23;
+  font-size: 1.3rem;
+}
+
+/* --- Contact Form --- */
+.contact-form {
+  flex: 1 1 400px;
+  background-color: #fff;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form h3 {
+  text-align: center;
+  color: #2d2d2d;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #b67c23;
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: #b67c23;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #a06b1f;
+}
+
+/* --- Footer Styling --- */
+.site-footer {
+  background-color: #fff7e6;
+  color: #333;
+  padding-top: 60px;
+}
+
+.footer__title {
+  color: #b67c23;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer_menu,
+.contact-info,
+.dt-sc-social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer_menu li {
+  margin-bottom: 8px;
+}
+
+.footer_menu a {
+  text-decoration: none;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+.footer_menu a:hover {
+  color: #b67c23;
+}
+
+.contact-info i {
+  color: #b67c23;
+  margin-right: 10px;
+}
+
+.dt-sc-social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.dt-sc-social-icons a {
+  background-color: #b67c23;
+  color: white;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.dt-sc-social-icons a:hover {
+  background-color: #a06b1f;
+}
+
+/* Newsletter */
+.footer__newsletter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.footer__newsletter-input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.footer__newsletter-btn {
+  background-color: #b67c23;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer__newsletter-btn:hover {
+  background-color: #a06b1f;
+}
+
+@media (max-width: 992px) {
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-details li {
+    justify-content: center;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .footer__newsletter {
+    flex-direction: column;
+  }
+
+  .footer__newsletter-input,
+  .footer__newsletter-btn {
+    width: 100%;
+  }
+}
